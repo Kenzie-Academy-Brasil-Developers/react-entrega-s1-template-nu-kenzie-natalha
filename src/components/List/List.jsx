@@ -24,7 +24,7 @@ const List = ({ listTransactions, setListTransactions }) => {
     </div>
   ) : (
     <div>
-      <div>
+      <div className="resumo">
         <p>Resumo Financeiro</p>
         <button>Todos</button>
         <button>Entrada</button>

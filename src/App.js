@@ -31,12 +31,12 @@ const App = () => {
           setListTransactions={setListTransactions}
         />
       </div>
-      <div>
+      <div className="total">
         <h4>Valor total: </h4>
-        <p>
+        <p className="pTotal">
           R$ <TotalMoney listTransactions={listTransactions} />
         </p>
-        <p>O valor se refere ao saldo</p>
+        <span>O valor se refere ao saldo</span>
       </div>
       <div>
         <List

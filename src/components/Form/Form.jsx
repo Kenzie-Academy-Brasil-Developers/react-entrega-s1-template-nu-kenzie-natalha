@@ -23,7 +23,7 @@ const Form = ({ listTransactions, setListTransactions }) => {
   };
 
   return (
-    <div>
+    <div className="formDiv">
       <form onSubmit={handleInput}>
         <label>Descrição</label>
         <input
@@ -33,27 +33,32 @@ const Form = ({ listTransactions, setListTransactions }) => {
           onChange={(event) => setInput(event.target.value)}
           key={"description"}
         />
-        <div className="valor">
-          <label>Valor</label>
-          <input
-            placeholder="Digite o valor"
-            type="number"
-            name="value"
-            onChange={(event) => setInputValue(event.target.value)}
-            key={"value"}
-          />
-          <label>Tipo de valor</label>
-          <select
-            name="type"
-            id=""
-            onChange={(event) => setInputType(event.target.value)}
-            key={"type"}
-          >
-            <option>Entrada</option>
-            <option>Saída</option>
-          </select>
+        <div className="valorAll">
+          <div className="valorOne">
+            <label>Valor</label>
+            <input
+              className="valorLabel"
+              placeholder="Digite o valor"
+              type="number"
+              name="value"
+              onChange={(event) => setInputValue(event.target.value)}
+              key={"value"}
+            />
+          </div>
+          <div className="valorTwo">
+            <label>Tipo de valor</label>
+            <select
+              name="type"
+              id=""
+              onChange={(event) => setInputType(event.target.value)}
+              key={"type"}
+            >
+              <option>Entrada</option>
+              <option>Saída</option>
+            </select>
+          </div>
         </div>
-        <button>Inserir valor</button>
+        <button className="btnInse">Inserir valor</button>
       </form>
     </div>
   );

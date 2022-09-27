@@ -6,15 +6,26 @@ h2 {
   font-size: 12px;
   line-height: 34px;
   color: #343a40;
+  padding-left: 2rem;
 }
 
 .resumo {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  color: #343a40;
+  background-color: #fff;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.resumo button {
+  width: 4rem;
+  height: 2rem;
 }
 
 ul {
-  padding-left: 0rem;
+  padding-left: 1rem;
 }
 img {
   width: 17rem;

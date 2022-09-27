@@ -5,7 +5,7 @@ import Form from "../Form/Form";
 
 const HomePage = ({ login }) => {
   return (
-    <>
+    <div className="container">
       <div className="text">
         <div className="textTwo">
           <img src={NuWhite} alt="logo" className="logo" />
@@ -18,7 +18,7 @@ const HomePage = ({ login }) => {
 
         <img src={illustration} alt="tela inicial" className="tela" />
       </div>
-    </>
+    </div>
   );
 };
 
