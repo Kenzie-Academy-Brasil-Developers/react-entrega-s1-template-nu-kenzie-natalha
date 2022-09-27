@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "../src/App.css";
 import { useState } from "react";
 import NuKenzie from "../src/services/NuKenzie.svg";
 import Form from "./components/Form/Form";
@@ -17,10 +17,14 @@ const App = () => {
 
   return isLoggedIn ? (
     <>
-      <header>
-        <img src={NuKenzie} alt="logo NuKenzie" />
-        <button onClick={() => logout()}>Inicio</button>
-      </header>
+      <div className="head">
+        <header>
+          <img src={NuKenzie} alt="logo NuKenzie" className="logo" />
+          <button onClick={() => logout()} className="btnInicio">
+            Inicio
+          </button>
+        </header>
+      </div>
       <div>
         <Form
           listTransactions={listTransactions}

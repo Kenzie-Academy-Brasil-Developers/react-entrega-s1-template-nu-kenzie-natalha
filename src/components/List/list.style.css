@@ -1,0 +1,21 @@
+h2 {
+  width: 440px;
+  height: 34px;
+  top: 189px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 34px;
+  color: #343a40;
+}
+
+.resumo {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  padding-left: 0rem;
+}
+img {
+  width: 17rem;
+}

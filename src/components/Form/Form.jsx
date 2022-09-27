@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../Form/form.style.css";
 
 const Form = ({ listTransactions, setListTransactions }) => {
   const [input, setInput] = useState("");
@@ -32,24 +33,26 @@ const Form = ({ listTransactions, setListTransactions }) => {
           onChange={(event) => setInput(event.target.value)}
           key={"description"}
         />
-        <label>Valor</label>
-        <input
-          placeholder="Digite o valor"
-          type="number"
-          name="value"
-          onChange={(event) => setInputValue(event.target.value)}
-          key={"value"}
-        />
-        <label>Tipo de valor</label>
-        <select
-          name="type"
-          id=""
-          onChange={(event) => setInputType(event.target.value)}
-          key={"type"}
-        >
-          <option>Entrada</option>
-          <option>Saída</option>
-        </select>
+        <div className="valor">
+          <label>Valor</label>
+          <input
+            placeholder="Digite o valor"
+            type="number"
+            name="value"
+            onChange={(event) => setInputValue(event.target.value)}
+            key={"value"}
+          />
+          <label>Tipo de valor</label>
+          <select
+            name="type"
+            id=""
+            onChange={(event) => setInputType(event.target.value)}
+            key={"type"}
+          >
+            <option>Entrada</option>
+            <option>Saída</option>
+          </select>
+        </div>
         <button>Inserir valor</button>
       </form>
     </div>
