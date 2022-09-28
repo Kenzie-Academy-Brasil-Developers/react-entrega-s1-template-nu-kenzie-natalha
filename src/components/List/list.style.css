@@ -1,3 +1,6 @@
+.card {
+}
+
 h2 {
   width: 440px;
   height: 34px;
@@ -6,27 +9,49 @@ h2 {
   font-size: 12px;
   line-height: 34px;
   color: #343a40;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .resumo {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
   color: #343a40;
   background-color: #fff;
   border: none;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  background: #ffffff;
 }
 
-.resumo button {
-  width: 4rem;
+.pResu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  color: #212529;
+}
+
+.todos {
+  background-color: #fd377e;
+  width: 3.5rem;
   height: 2rem;
 }
 
+.other {
+  width: 3.5rem;
+  height: 2rem;
+  background-color: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+  color: #343a40;
+}
+
+.todos {
+  background-color: #fd377e;
+}
+
 ul {
-  padding-left: 1rem;
 }
 img {
-  width: 17rem;
+  width: 20rem;
 }

@@ -27,6 +27,7 @@ const Form = ({ listTransactions, setListTransactions }) => {
       <form onSubmit={handleInput}>
         <label>Descrição</label>
         <input
+          className="descriInpu"
           placeholder="Digite aqui sua descrição"
           type="text"
           name="description"

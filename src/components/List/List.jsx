@@ -6,10 +6,10 @@ const List = ({ listTransactions, setListTransactions }) => {
   return listTransactions.length > 0 ? (
     <div>
       <div className="resumo">
-        <p>Resumo Financeiro</p>
-        <button>Todos</button>
-        <button>Entrada</button>
-        <button>Saida</button>
+        <p className="pResu">Resumo Financeiro</p>
+        <button className="todos">Todos</button>
+        <button className="other">Entrada</button>
+        <button className="other">Saida</button>
       </div>
       <ul>
         {listTransactions.map((transaction, index) => (
@@ -23,12 +23,12 @@ const List = ({ listTransactions, setListTransactions }) => {
       </ul>
     </div>
   ) : (
-    <div>
+    <div className="card">
       <div className="resumo">
-        <p>Resumo Financeiro</p>
-        <button>Todos</button>
-        <button>Entrada</button>
-        <button>Saida</button>
+        <p className="pResu">Resumo Financeiro</p>
+        <button className="todos">Todos</button>
+        <button className="other">Entrada</button>
+        <button className="other">Saida</button>
       </div>
       <h2>Você ainda não possui nenhum lançamento</h2>
       <ul>

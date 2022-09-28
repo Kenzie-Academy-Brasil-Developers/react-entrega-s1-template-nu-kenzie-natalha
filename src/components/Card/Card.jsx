@@ -1,3 +1,6 @@
+import "../Card/card.style.css";
+import { FaTrash } from "react-icons/fa";
+
 const Card = ({ listTransactions, transaction, setListTransactions }) => {
   const removeCard = (card) => {
     setListTransactions(listTransactions.filter((elem) => elem !== card));
@@ -10,19 +13,23 @@ const Card = ({ listTransactions, transaction, setListTransactions }) => {
         <p>{transaction.type}</p>
       </div>
       <div>
-        <p>{transaction.price}</p>
-        <button onClick={() => removeCard(transaction)}>Apagar</button>
+        <p>R$ {transaction.value}</p>
+        <button onClick={() => removeCard(transaction)}>
+          <FaTrash />
+        </button>
       </div>
     </li>
   ) : (
     <li className="saida">
       <div>
         <h3>{transaction.description}</h3>
-        <p>{transaction.type}</p>
+        <p>{transaction.value}</p>
       </div>
       <div>
-        <p>{transaction.price}</p>
-        <button onClick={() => removeCard(transaction)}>Apagar</button>
+        <p>R$ {transaction.value}</p>
+        <button onClick={() => removeCard(transaction)}>
+          <FaTrash />
+        </button>
       </div>
     </li>
   );
