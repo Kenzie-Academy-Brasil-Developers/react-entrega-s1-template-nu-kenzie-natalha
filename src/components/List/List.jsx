@@ -4,7 +4,7 @@ import "../List/list.style.css";
 
 const List = ({ listTransactions, setListTransactions }) => {
   return listTransactions.length > 0 ? (
-    <div>
+    <div className="card">
       <div className="resumo">
         <p className="pResu">Resumo Financeiro</p>
         <button className="todos">Todos</button>

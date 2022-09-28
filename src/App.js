@@ -25,24 +25,27 @@ const App = () => {
           </button>
         </header>
       </div>
-      <div>
-        <Form
-          listTransactions={listTransactions}
-          setListTransactions={setListTransactions}
-        />
-      </div>
-      <div className="total">
-        <h4>Valor total: </h4>
-        <p className="pTotal">
-          R$ <TotalMoney listTransactions={listTransactions} />
-        </p>
-        <span>O valor se refere ao saldo</span>
-      </div>
-      <div>
-        <List
-          listTransactions={listTransactions}
-          setListTransactions={setListTransactions}
-        />
+      <div className="everything">
+        <div>
+          <div>
+            <Form
+              listTransactions={listTransactions}
+              setListTransactions={setListTransactions}
+            />
+          </div>
+          <div className="allTotal">
+            <h4>Valor total: </h4>
+            <p className="pTotal">
+              R$ <TotalMoney listTransactions={listTransactions} />
+            </p>
+          </div>
+        </div>
+        <div>
+          <List
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          />
+        </div>
       </div>
     </>
   ) : (

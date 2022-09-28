@@ -8,26 +8,26 @@ const Card = ({ listTransactions, transaction, setListTransactions }) => {
 
   return transaction.type === "Entrada" ? (
     <li className="entrada">
-      <div>
+      <div className="divLi">
         <h3>{transaction.description}</h3>
         <p>{transaction.type}</p>
       </div>
-      <div>
+      <div className="divLiOu">
         <p>R$ {transaction.value}</p>
-        <button onClick={() => removeCard(transaction)}>
+        <button className="trahs" onClick={() => removeCard(transaction)}>
           <FaTrash />
         </button>
       </div>
     </li>
   ) : (
     <li className="saida">
-      <div>
+      <div className="divLi">
         <h3>{transaction.description}</h3>
-        <p>{transaction.value}</p>
+        <p>{transaction.type}</p>
       </div>
-      <div>
+      <div className="divLiOu">
         <p>R$ {transaction.value}</p>
-        <button onClick={() => removeCard(transaction)}>
+        <button className="trahs" onClick={() => removeCard(transaction)}>
           <FaTrash />
         </button>
       </div>
