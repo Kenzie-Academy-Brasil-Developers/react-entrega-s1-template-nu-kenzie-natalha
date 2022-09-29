@@ -75,7 +75,8 @@
   .everything {
     display: flex;
     flex-direction: row;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
   }
 
   .allTotal {

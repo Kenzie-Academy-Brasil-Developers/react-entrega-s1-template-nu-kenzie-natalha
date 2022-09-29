@@ -4,12 +4,12 @@
     border: 1px solid #e9ecef;
     border-radius: 4px;
     color: #000000;
-    width: 23rem;
+    width: 18rem;
     height: 10rem;
     margin-top: 0.7rem;
     display: flex;
     flex-direction: column;
-    padding-left: 5px;
+    margin-left: 0.7rem;
     box-shadow: 0px 4px 32px -12px rgb(0 0 0 / 25%);
   }
 
@@ -26,12 +26,12 @@
     display: flex;
     flex-direction: column;
     width: 10rem;
-    padding-right: 50px;
   }
 
   .valorTwo {
     display: flex;
     flex-direction: column;
+    padding-right: 40px;
   }
 
   label {
@@ -58,7 +58,7 @@
     background: #f8f9fa;
     border: 2px solid #f8f9fa;
     border-radius: 8px;
-    width: 22rem;
+    width: 18rem;
     height: 2rem;
   }
 
@@ -97,7 +97,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 7rem;
+    margin-left: 5rem;
     margin-top: 1rem;
     width: 6rem;
     height: 2rem;
