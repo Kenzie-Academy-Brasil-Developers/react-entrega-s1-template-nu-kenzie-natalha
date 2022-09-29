@@ -1,7 +1,16 @@
 import { useState } from "react";
 import "../Form/form.style.css";
 
-const Form = ({ listTransactions, setListTransactions }) => {
+const Form = ({
+  listTransactions,
+  setListTransactions,
+  payment,
+  setPayment,
+  expense,
+  setExpense,
+  allMoney,
+  setAllMoney,
+}) => {
   const [input, setInput] = useState("");
   const [inputValue, setInputValue] = useState(0);
   const [inputType, setInputType] = useState("Entrada");
@@ -11,6 +20,30 @@ const Form = ({ listTransactions, setListTransactions }) => {
     if (input !== "" && input !== " " && inputValue !== 0) {
       setListTransactions([
         ...listTransactions,
+        {
+          description: input,
+          type: inputType,
+          value: Number(inputValue),
+        },
+      ]);
+      setPayment([
+        ...payment,
+        {
+          description: input,
+          type: inputType,
+          value: Number(inputValue),
+        },
+      ]);
+      setExpense([
+        ...expense,
+        {
+          description: input,
+          type: inputType,
+          value: Number(inputValue),
+        },
+      ]);
+      setAllMoney([
+        ...allMoney,
         {
           description: input,
           type: inputType,

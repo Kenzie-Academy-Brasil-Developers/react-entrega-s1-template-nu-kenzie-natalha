@@ -9,6 +9,9 @@ import HomePage from "./components/HomePage/HomePage";
 
 const App = () => {
   const [listTransactions, setListTransactions] = useState([]);
+  const [payment, setPayment] = useState([]);
+  const [expense, setExpense] = useState([]);
+  const [allMoney, setAllMoney] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const login = () => setIsLoggedIn(true);
@@ -31,6 +34,12 @@ const App = () => {
             <Form
               listTransactions={listTransactions}
               setListTransactions={setListTransactions}
+              payment={payment}
+              setPayment={setPayment}
+              expense={expense}
+              setExpense={setExpense}
+              allMoney={allMoney}
+              setAllMoney={setAllMoney}
             />
           </div>
           <div className="allTotal">
@@ -44,6 +53,12 @@ const App = () => {
           <List
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
+            payment={payment}
+            setPayment={setPayment}
+            expense={expense}
+            setExpense={setExpense}
+            allMoney={allMoney}
+            setAllMoney={setAllMoney}
           />
         </div>
       </div>

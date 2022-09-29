@@ -1,10 +1,10 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   form {
     background: #ffffff;
     border: 1px solid #e9ecef;
     border-radius: 4px;
     color: #000000;
-    width: 18rem;
+    width: 22rem;
     height: 10rem;
     margin-top: 0.7rem;
     display: flex;
@@ -72,6 +72,7 @@
     background: #f8f9fa;
     border: 2px solid #f8f9fa;
     border-radius: 8px;
+    cursor: pointer;
   }
   option {
     box-sizing: border-box;
@@ -97,7 +98,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 5rem;
+    margin-left: 7rem;
     margin-top: 1rem;
     width: 6rem;
     height: 2rem;
@@ -109,7 +110,7 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   form {
     background: #ffffff;
     border: 1px solid #e9ecef;
@@ -196,6 +197,7 @@
     border: 2px solid #f8f9fa;
     border-radius: 8px;
     height: 2rem;
+    cursor: pointer;
   }
   option {
     box-sizing: border-box;

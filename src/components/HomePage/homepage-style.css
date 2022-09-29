@@ -43,6 +43,7 @@
     border: 2px solid #fd377e;
     border-radius: 8px;
     color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -96,6 +97,7 @@
     border: 2px solid #fd377e;
     border-radius: 8px;
     color: #fff;
+    cursor: pointer;
   }
 
   .image {
